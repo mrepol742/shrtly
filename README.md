@@ -1,6 +1,6 @@
-# Shortlink App
+# shrtly
 
-The only shortlink you will ever need.  Simple, lightweight and utilize Redis for transactions.
+The only link shortener you will ever need.  Simple, lightweight and utilize Redis for transactions.
 
 ---
 

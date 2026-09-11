@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Source_Code_Pro, Maven_Pro } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
-import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 const sourceCodePro = Source_Code_Pro({
@@ -22,10 +21,10 @@ const mavenPro = Maven_Pro({
 export const revalidate = 43200; // 12 hours (in seconds)
 
 export const metadata: Metadata = {
-  title: "Shortlink - Shorten any URL Instantly!",
+  title: "Shrtly - Shorten any URL Instantly!",
   description:
-    "Shortlink is a simple URL shortening service that allows you to create short links for your long URLs.",
-  keywords: ["url", "shortener", "link", "shortlink"],
+    "Shrtly is a simple URL shortening service that allows you to create short links for your long URLs.",
+  keywords: ["url", "shortener", "link", "shortlink", "shrtly"],
 };
 
 export default function RootLayout({
@@ -40,13 +39,11 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <head>
-        <meta name="hostname" content="go.melvinjonesrepol.com" />
-        <link rel="canonical" href="https://go.melvinjonesrepol.com" />
+        <meta name="hostname" content="shrtly.melvinjonesrepol.com" />
+        <link rel="canonical" href="https://shrtly.melvinjonesrepol.com" />
       </head>
       <body className="antialiased">
         <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
-          <Nav />
-
           {children}
 
           <Footer />

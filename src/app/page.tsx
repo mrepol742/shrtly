@@ -83,10 +83,6 @@ export default function Home() {
 
       <main className="max-w-6xl mx-auto px-6 pt-20 pb-16">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-medium mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse"></span>
-            Fast, Free and Reliable
-          </div>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-5 leading-tight">
             Shorten Any URL
             <span className="block bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
