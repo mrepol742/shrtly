@@ -5,6 +5,10 @@ import { ToastContainer } from "react-toastify";
 import Footer from "../components/layout/Footer";
 import { ConsentProvider } from "@/context/consent";
 import CookieBanner from "@/components/common/PrivacyPolicyPrompt";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
 
 const mavenPro = Maven_Pro({
   subsets: ["latin"],
