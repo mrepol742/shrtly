@@ -1,6 +1,6 @@
 import { redis } from "@/lib/redis";
-import { redirect } from "next/navigation";
 import { notFound } from "next/navigation";
+import RedirectCountdown from "@/components/common/RedirectCountdown";
 
 interface Props {
   params: Promise<{
@@ -10,9 +10,12 @@ interface Props {
 
 export default async function RedirectPage({ params }: Props) {
   const { slug } = await params;
-  const url = await redis.get(slug);
+  const _redis = redis();
+  if (!_redis) return notFound();
+
+  const url = await _redis.get(slug);
 
   if (!url) return notFound();
 
-  redirect(url);
+  return <RedirectCountdown url={url.toString()} />;
 }

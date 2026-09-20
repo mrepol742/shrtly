@@ -76,39 +76,37 @@ export default function Home() {
   return (
     <>
       {loading && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
-          <div className="w-14 h-14 border-4 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#17211b]/20 backdrop-blur-sm">
+          <div className="size-14 animate-spin rounded-full border-4 border-[#17854b] border-t-transparent" />
         </div>
       )}
 
-      <main className="max-w-6xl mx-auto px-6 pt-20 pb-16">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-5 leading-tight">
+      <main className="mx-auto max-w-6xl px-6 pb-16 pt-20">
+        <div className="mb-14 text-center">
+          <h1 className="mb-5 text-5xl font-extrabold leading-tight tracking-tight md:text-6xl">
             Shorten Any URL
-            <span className="block bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
-              Instantly
-            </span>
+            <span className="block text-[#17854b]">Instantly</span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="mx-auto max-w-xl text-lg leading-relaxed text-[#657269]">
             Transform long, unwieldy URLs into clean, shareable shortlinks in
             seconds. Perfect for social media, emails, and campaigns.
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-2xl">
-            <label className="block text-sm font-medium text-gray-300 mb-3">
+          <div className="rounded-3xl border border-[#dbe5de] bg-white p-5 shadow-[0_18px_50px_rgba(23,33,27,0.08)] sm:p-7">
+            <label className="mb-3 block text-sm font-semibold text-[#334139]">
               Paste your long URL below
             </label>
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col md:flex-row gap-4"
+              className="flex flex-col gap-3 md:flex-row"
             >
-              <div className="flex-1 flex items-center bg-gray-900 border border-white/10 rounded-xl px-4 focus-within:border-emerald-500/60 focus-within:ring-1 focus-within:ring-emerald-500/30 transition-all">
+              <div className="flex flex-1 items-center rounded-xl border border-[#cfdcd2] bg-[#fbfcfb] px-4 transition-all focus-within:border-[#17854b] focus-within:ring-4 focus-within:ring-[#17854b]/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 640"
-                  className="w-4 h-4 fill-gray-500 mr-3 shrink-0"
+                  className="mr-3 size-4 shrink-0 fill-[#7b887f]"
                 >
                   <path d="M451.5 160C434.9 160 418.8 164.5 404.7 172.7C388.9 156.7 370.5 143.3 350.2 133.2C378.4 109.2 414.3 96 451.5 96C537.9 96 608 166 608 252.5C608 294 591.5 333.8 562.2 363.1L491.1 434.2C461.8 463.5 422 480 380.5 480C294.1 480 224 410 224 323.5C224 322 224 320.5 224.1 319C224.6 301.3 239.3 287.4 257 287.9C274.7 288.4 288.6 303.1 288.1 320.8C288.1 321.7 288.1 322.6 288.1 323.4C288.1 374.5 329.5 415.9 380.6 415.9C405.1 415.9 428.6 406.2 446 388.8L517.1 317.7C534.4 300.4 544.2 276.8 544.2 252.3C544.2 201.2 502.8 159.8 451.7 159.8zM307.2 237.3C305.3 236.5 303.4 235.4 301.7 234.2C289.1 227.7 274.7 224 259.6 224C235.1 224 211.6 233.7 194.2 251.1L123.1 322.2C105.8 339.5 96 363.1 96 387.6C96 438.7 137.4 480.1 188.5 480.1C205 480.1 221.1 475.7 235.2 467.5C251 483.5 269.4 496.9 289.8 507C261.6 530.9 225.8 544.2 188.5 544.2C102.1 544.2 32 474.2 32 387.7C32 346.2 48.5 306.4 77.8 277.1L148.9 206C178.2 176.7 218 160.2 259.5 160.2C346.1 160.2 416 230.8 416 317.1C416 318.4 416 319.7 416 321C415.6 338.7 400.9 352.6 383.2 352.2C365.5 351.8 351.6 337.1 352 319.4C352 318.6 352 317.9 352 317.1C352 283.4 334 253.8 307.2 237.5z" />
                 </svg>
@@ -117,20 +115,20 @@ export default function Home() {
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
                   placeholder="https://your-very-long-url.com/goes/here"
-                  className="flex-1 bg-transparent py-3.5 text-sm text-white placeholder-gray-600 focus:outline-none"
+                  className="flex-1 bg-transparent py-3.5 text-sm text-[#17211b] placeholder-[#8a958d] focus:outline-none"
                 />
               </div>
               <button
                 type="submit"
-                className="px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-semibold rounded-xl text-sm transition-all shadow-lg shadow-emerald-500/20 active:scale-95 cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#17854b] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#146c3d] active:scale-[0.98]"
               >
                 Shorten
               </button>
             </form>
 
             {shortUrl && (
-              <div className="mt-5 p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
-                <p className="text-xs text-emerald-400 font-medium uppercase tracking-wider mb-2">
+              <div className="mt-5 rounded-xl border border-[#b8d6c0] bg-[#f3faf5] p-4">
+                <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[#146c3d]">
                   Your shortlink is ready
                 </p>
                 <div className="flex items-center justify-between gap-3">
@@ -138,7 +136,7 @@ export default function Home() {
                     href={shortUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-300 font-mono text-sm underline underline-offset-2 truncate hover:text-emerald-200 transition-colors"
+                    className="truncate font-mono text-sm text-[#146c3d] underline underline-offset-2 transition-colors hover:text-[#0d4a29]"
                   >
                     {shortUrl}
                   </a>
@@ -147,7 +145,7 @@ export default function Home() {
                       href={shortUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-medium rounded-lg transition-colors"
+                      className="flex items-center gap-1.5 rounded-lg bg-[#17854b] px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-[#146c3d]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -161,12 +159,12 @@ export default function Home() {
                     </a>
                     <button
                       onClick={handleCopy}
-                      className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-700 hover:bg-gray-600 text-white text-xs font-medium rounded-lg transition-colors cursor-pointer"
+                      className="flex cursor-pointer items-center gap-1.5 rounded-lg border border-[#b9c6bd] bg-white px-3 py-1.5 text-xs font-medium text-[#334139] transition-colors hover:bg-[#edf2ee]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 640 640"
-                        className="w-3.5 h-3.5 fill-white"
+                        className="size-3.5 fill-[#334139]"
                       >
                         {/*Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.*/}
                         <path d="M288 64C252.7 64 224 92.7 224 128L224 384C224 419.3 252.7 448 288 448L480 448C515.3 448 544 419.3 544 384L544 183.4C544 166 536.9 149.3 524.3 137.2L466.6 81.8C454.7 70.4 438.8 64 422.3 64L288 64zM160 192C124.7 192 96 220.7 96 256L96 512C96 547.3 124.7 576 160 576L352 576C387.3 576 416 547.3 416 512L416 496L352 496L352 512L160 512L160 256L176 256L176 192L160 192z" />
@@ -181,41 +179,39 @@ export default function Home() {
         </div>
 
         <div className="mt-24">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold mb-2">How it works</h2>
-            <p className="text-gray-500 text-sm">
+          <div className="mb-12 text-center">
+            <h2 className="mb-2 text-2xl font-bold">How it works</h2>
+            <p className="text-sm text-[#657269]">
               Three simple steps to a cleaner link
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-orange-500/30 transition-colors group">
-              <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center mb-4 group-hover:bg-orange-500/25 transition-colors">
-                <span className="text-orange-400 font-bold text-lg">1</span>
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-5 md:grid-cols-3">
+            <div className="group rounded-2xl border border-[#dbe5de] bg-white p-6 transition-colors hover:border-[#9acaaa]">
+              <div className="mb-4 flex size-10 items-center justify-center rounded-xl bg-[#eaf5ed] transition-colors group-hover:bg-[#dcefe1]">
+                <span className="text-lg font-bold text-[#17854b]">1</span>
               </div>
-              <h3 className="font-semibold text-white mb-2">Paste your URL</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <h3 className="mb-2 font-semibold">Paste your URL</h3>
+              <p className="text-sm leading-relaxed text-[#657269]">
                 Copy any long URL from your browser, an email, or a document and
                 paste it into the input field above.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-emerald-500/30 transition-colors group">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center mb-4 group-hover:bg-emerald-500/25 transition-colors">
-                <span className="text-emerald-400 font-bold text-lg">2</span>
+            <div className="group rounded-2xl border border-[#dbe5de] bg-white p-6 transition-colors hover:border-[#9acaaa]">
+              <div className="mb-4 flex size-10 items-center justify-center rounded-xl bg-[#eaf5ed] transition-colors group-hover:bg-[#dcefe1]">
+                <span className="text-lg font-bold text-[#17854b]">2</span>
               </div>
-              <h3 className="font-semibold text-white mb-2">
-                Generate shortlink
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <h3 className="mb-2 font-semibold">Generate shortlink</h3>
+              <p className="text-sm leading-relaxed text-[#657269]">
                 Click Shorten and our system instantly creates a compact, unique
                 link mapped to your original URL.
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-rose-500/30 transition-colors group">
-              <div className="w-10 h-10 rounded-xl bg-rose-500/15 flex items-center justify-center mb-4 group-hover:bg-rose-500/25 transition-colors">
-                <span className="text-rose-400 font-bold text-lg">3</span>
+            <div className="group rounded-2xl border border-[#dbe5de] bg-white p-6 transition-colors hover:border-[#9acaaa]">
+              <div className="mb-4 flex size-10 items-center justify-center rounded-xl bg-[#eaf5ed] transition-colors group-hover:bg-[#dcefe1]">
+                <span className="text-lg font-bold text-[#17854b]">3</span>
               </div>
-              <h3 className="font-semibold text-white mb-2">Share anywhere</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <h3 className="mb-2 font-semibold">Share anywhere</h3>
+              <p className="text-sm leading-relaxed text-[#657269]">
                 Copy and share your shortlink via social media, messages, or
                 print. Visitors are redirected instantly.
               </p>
@@ -223,31 +219,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto text-center">
+        <div className="mx-auto mt-20 grid max-w-3xl grid-cols-2 gap-4 text-center md:grid-cols-4">
           {[
             {
               label: "Links created",
               value: "10K+",
-              color: "text-emerald-400",
+              color: "text-[#17854b]",
             },
             {
               label: "Redirects served",
               value: "500K+",
-              color: "text-teal-400",
+              color: "text-[#17854b]",
             },
-            { label: "Uptime", value: "99.9%", color: "text-orange-400" },
+            { label: "Uptime", value: "99.9%", color: "text-[#17854b]" },
             {
               label: "Avg. redirect speed",
               value: "<50ms",
-              color: "text-rose-400",
+              color: "text-[#17854b]",
             },
           ].map(({ label, value, color }) => (
             <div
               key={label}
-              className="bg-white/5 border border-white/10 rounded-xl px-4 py-5"
+              className="rounded-xl border border-[#dbe5de] bg-white px-4 py-5"
             >
               <div className={`text-2xl font-extrabold ${color}`}>{value}</div>
-              <div className="text-gray-500 text-xs mt-1">{label}</div>
+              <div className="mt-1 text-xs text-[#657269]">{label}</div>
             </div>
           ))}
         </div>
