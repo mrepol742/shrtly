@@ -49,7 +49,6 @@ export default function Footer({ force = false }: { force?: boolean }) {
       href: "https://www.melvinjonesrepol.com/point-of-sale",
       label: "Point of Sale",
     },
-    { href: "https://ulishastore.com", label: "Ulisha Store Laravel" },
     {
       href: "https://www.melvinjonesrepol.com/canis-agent",
       label: "Canis Chatbot",
