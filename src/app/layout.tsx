@@ -41,6 +41,11 @@ export default function RootLayout({
       <head>
         <meta name="hostname" content="shrtly.melvinjonesrepol.com" />
         <link rel="canonical" href="https://shrtly.melvinjonesrepol.com" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5077097159223655"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body className="antialiased">
         <div className="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">

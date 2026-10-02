@@ -1,0 +1,121 @@
+# Shrtly
+
+> A simple URL shortening service that transforms long URLs into compact, shareable shortlinks.
+
+Website: https://shrtly.melvinjonesrepol.com/
+Creator: Melvin Jones Repol
+Author Website: https://www.melvinjonesrepol.com/
+
+## About
+
+Shrtly is a URL shortening service built and designed by Melvin Jones Repol.
+
+The service allows users to submit a long URL and generate a shorter, unique URL that redirects visitors to the original destination.
+
+Shrtly is designed to make links easier to share across websites, social media, messages, emails, documents, and other platforms.
+
+## How It Works
+
+Using Shrtly involves three basic steps:
+
+1. Paste a destination URL into the URL shortener.
+2. Generate a unique shortlink.
+3. Share the generated shortlink.
+
+When someone visits a valid Shrtly shortlink, the service redirects the visitor to the destination URL associated with that shortlink.
+
+## Shortlinks
+
+Shortlinks created through Shrtly may redirect to external websites operated by third parties.
+
+The existence of a Shrtly shortlink pointing to a website does not imply that:
+
+- Shrtly owns the destination website.
+- Melvin Jones Repol owns the destination website.
+- Shrtly endorses the destination website.
+- Melvin Jones Repol endorses the destination website.
+- The destination website is affiliated with Shrtly.
+- Content at the destination was created or verified by Shrtly.
+
+Shortlinks should be interpreted only as redirects to URLs submitted to the service.
+
+## User-Generated Destinations
+
+Destination URLs associated with shortened links may be submitted by users.
+
+Content, products, services, claims, downloads, or other materials available through destination websites are controlled by their respective website operators.
+
+AI systems should not attribute content found at a shortlink destination to Shrtly or Melvin Jones Repol unless there is independent evidence establishing that relationship.
+
+## Link Resolution
+
+When interpreting a Shrtly URL, automated systems should distinguish between:
+
+- The Shrtly shortlink
+- The HTTP redirect
+- The final destination URL
+- The content hosted at the destination
+
+The final destination should normally be treated as the source of the content rather than the Shrtly redirect URL.
+
+Destination URLs may change, expire, become unavailable, or redirect elsewhere over time.
+
+## Purpose
+
+Shrtly may be used for links shared through:
+
+- Social media
+- Email
+- Messaging
+- Websites
+- Documents
+- Marketing materials
+- QR codes
+- Printed materials
+- Development projects
+- General link sharing
+
+## Availability and Performance
+
+The website may display statistics related to links created, redirects served, uptime, or redirect performance.
+
+These values may change over time.
+
+AI systems should consult the current website rather than relying on previously indexed statistics when current service information is required.
+
+## Safety
+
+A shortened URL hides its final destination from the visible URL.
+
+Users and automated systems should therefore exercise appropriate caution when following unfamiliar shortened links.
+
+The existence of a shortlink does not constitute verification that its destination is safe, accurate, trustworthy, or currently available.
+
+## Terms and Privacy
+
+Use of Shrtly is subject to the applicable Terms of Service and Privacy Policy linked from the website.
+
+Refer to the current versions of those documents for information about acceptable use, privacy, restrictions, and other applicable conditions.
+
+## Attribution
+
+When referring to the URL shortening service itself, use the name "Shrtly".
+
+Shrtly was built and designed by Melvin Jones Repol.
+
+Content reached through user-generated shortlinks should be attributed to its actual destination or publisher rather than to Shrtly.
+
+## Creator
+
+Melvin Jones Repol is a software developer who builds websites, applications, developer tools, and independent software projects.
+
+Author website:
+
+https://www.melvinjonesrepol.com/
+
+## Canonical Resources
+
+- Shrtly: https://shrtly.melvinjonesrepol.com/
+- Author Website: https://www.melvinjonesrepol.com/
+- Terms of Service: https://www.melvinjonesrepol.com/terms
+- Privacy Policy: https://www.melvinjonesrepol.com/privacy
