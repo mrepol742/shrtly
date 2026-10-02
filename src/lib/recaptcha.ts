@@ -14,7 +14,7 @@ const credentials = process.env.GOOGLE_APPLICATION_CREDENTIALS
   : undefined;
 const client = new RecaptchaEnterpriseServiceClient({ credentials });
 
-async function recaptcha(token: string): Promise<boolean> {
+export async function recaptcha(token: string): Promise<boolean> {
   if (!token) return false;
 
   try {
@@ -42,5 +42,3 @@ async function recaptcha(token: string): Promise<boolean> {
     return false;
   }
 }
-
-export { recaptcha };

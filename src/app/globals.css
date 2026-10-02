@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ededed;
-    --foreground: #171717;
+    --background: #f7f9f7;
+    --foreground: #17211b;
 }
 
 @theme inline {
@@ -10,24 +10,18 @@
     --color-foreground: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #171717;
-        --foreground: #ededed;
-    }
-}
-
 html {
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
+    scroll-behavior: smooth;
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-body);
-    scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 h1,
@@ -37,7 +31,6 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading);
-    letter-spacing: -0.05em;
 }
 
 .grecaptcha-badge {
