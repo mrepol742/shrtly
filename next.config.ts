@@ -12,7 +12,13 @@ const ContentSecurityPolicy = `
     https://www.google.com
     https://www.gstatic.com
     https://*.trustpilot.com
-    https://cdn.trustpilot.net;
+    https://cdn.trustpilot.net
+    https://ep2.adtrafficquality.google
+    https://fundingchoicesmessages.google.com
+    https://www.googletagmanager.com
+    https://www.google-analytics.com
+    https://pagead2.googlesyndication.com
+    https://googleads.g.doubleclick.net;
 
   style-src
     'self'
@@ -22,7 +28,9 @@ const ContentSecurityPolicy = `
     'self'
     data:
     blob:
-    https:;
+    https:
+    https://www.google-analytics.com
+    https://*.g.doubleclick.net;
 
   font-src
     'self'
@@ -33,13 +41,27 @@ const ContentSecurityPolicy = `
     'self'
     https://www.google.com
     https://www.gstatic.com
-    https://*.trustpilot.com;
+    https://*.trustpilot.com
+    https://ep1.adtrafficquality.google
+    https://pagead2.googlesyndication.com
+    https://analytics.google.com
+    https://www.google.com
+    https://www.google.com.ph
+    https://www.google-analytics.com
+    https://region1.google-analytics.com
+    https://stats.g.doubleclick.net
+    https://fundingchoicesmessages.google.com;
 
   frame-src
     'self'
     https://www.google.com
     https://recaptcha.google.com
-    https://*.trustpilot.com;
+    https://*.trustpilot.com
+    https://ep2.adtrafficquality.google
+    https://www.google.com
+    https://www.google.com.ph
+    https://td.doubleclick.net
+    https://googleads.g.doubleclick.net;
 
   worker-src 'self' blob:;
   child-src 'self' blob:;
