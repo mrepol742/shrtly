@@ -26,6 +26,7 @@ export default function Footer({ force = false }: { force?: boolean }) {
   ];
 
   const projectLinks = [
+    { href: "https://www.webvium.com", label: "Webvium Browser" },
     {
       href: "https://web-designs.melvinjonesrepol.com",
       label: "Web Design",
@@ -36,7 +37,6 @@ export default function Footer({ force = false }: { force?: boolean }) {
       label: "Wakatime Stats",
       external: true,
     },
-    { href: "https://www.webvium.com", label: "Webvium Browser" },
     {
       href: "https://www.melvinjonesrepol.com/protocol-discussion-platform",
       label: "Protocol Discussion Platform",
@@ -53,12 +53,34 @@ export default function Footer({ force = false }: { force?: boolean }) {
       href: "https://www.melvinjonesrepol.com/canis-agent",
       label: "Canis Chatbot",
     },
+  ];
+
+  const moreLinks = [
+    {
+      href: "https://tools.melvinjonesrepol.com",
+      label: "Useful Tools",
+      external: true,
+    },
+    {
+      href: "https://shrtly.melvinjonesrepol.com",
+      label: "Short Link Generator",
+      external: true,
+    },
     {
       href: "https://www.hallofcodes.org",
       label: "Hall of Codes",
       external: true,
     },
-    { href: "https://www.melvinjonesrepol.com/sitemap.xml", label: "Sitemap" },
+    {
+      href: "https://aiskillhub.dev",
+      label: "AISkillHub",
+      external: true,
+    },
+    {
+      href: "https://www.melvinjonesrepol.com/hotwheels-collection",
+      label: "Hotwheels Collection",
+      external: true,
+    },
   ];
 
   const socialLinks = [
@@ -90,7 +112,7 @@ export default function Footer({ force = false }: { force?: boolean }) {
   return (
     <footer className="mt-8 border-t border-[#dbe5de] bg-white">
       <div className="mx-auto max-w-6xl px-6 py-14">
-        <div className="grid gap-12 md:grid-cols-[1.4fr_0.8fr_1fr]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10">
           {/* Brand */}
           <div>
             <Link
@@ -127,11 +149,16 @@ export default function Footer({ force = false }: { force?: boolean }) {
 
           {/* Navigate */}
           <nav aria-label="Footer navigation">
-            <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#17854b]">Navigate</h4>
+            <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#17854b]">
+              Navigate
+            </h4>
             <ul className="mt-4 space-y-2.5 text-sm">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
-                  <Link className="text-[#526057] transition-colors hover:text-[#17854b]" href={`https://www.melvinjonesrepol.com${href}`}>
+                  <Link
+                    className="text-[#526057] transition-colors hover:text-[#17854b]"
+                    href={`https://www.melvinjonesrepol.com${href}`}
+                  >
                     {label}
                   </Link>
                 </li>
@@ -141,9 +168,32 @@ export default function Footer({ force = false }: { force?: boolean }) {
 
           {/* Projects */}
           <nav aria-label="Featured projects">
-            <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#17854b]">Projects</h4>
+            <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#17854b]">
+              Projects
+            </h4>
             <ul className="mt-4 grid gap-2.5 text-sm">
               {projectLinks.map(({ href, label, external }) => (
+                <li key={href}>
+                  <Link
+                    className="text-[#526057] transition-colors hover:text-[#17854b]"
+                    href={href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* More */}
+          <nav aria-label="More">
+            <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#17854b]">
+              More
+            </h4>
+            <ul className="mt-4 grid gap-2.5 text-sm">
+              {moreLinks.map(({ href, label, external }) => (
                 <li key={href}>
                   <Link
                     className="text-[#526057] transition-colors hover:text-[#17854b]"
